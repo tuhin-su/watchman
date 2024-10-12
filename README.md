@@ -10,7 +10,7 @@
 Watchman continuously scans for suspicious activities and potential threats within your network.
 It provides instant alerts when any anomalies are detected.
 
-### IP Blocking(upcoming):
+### IP Blocking:
 
 The application can automatically block IP addresses that exhibit malicious behavior, such as repeated unauthorized access attempts or denial-of-service (DoS) attacks.
 Users can manually block or unblock IP addresses, with the option to provide reasons for each action.
