@@ -35,3 +35,13 @@ Users can customize settings to tailor the tool's behavior to their specific sec
 ### Integration:
 
 Watchman can integrate with other security tools and systems to enhance overall cybersecurity posture.
+
+
+## How to install
+### Download build from releases extract zip file and run install.sh with sudo
+### Build own and install
+```bash
+  git clone https://github.com/tuhin-su/watchman.git
+  cd watchman
+  sudo bash install.sh
+```
