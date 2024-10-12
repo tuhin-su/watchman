@@ -43,5 +43,7 @@ Watchman can integrate with other security tools and systems to enhance overall 
 ```bash
   git clone https://github.com/tuhin-su/watchman.git
   cd watchman
+  sudo bash build.sh
+  cd watchman
   sudo bash install.sh
 ```
