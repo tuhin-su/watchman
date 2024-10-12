@@ -6,9 +6,7 @@ pip install -r requrement.text
 
 pyinstaller --onefile --icon=icon/icon.ico --add-data "modules:modules" main.py
 
-sudo mkdir /opt/watchman
-sudo mv -v dist/main /opt/watchman/
-sudo chmod +x /opt/watchman/main
-sudo cp -p watchman.service /etc/systemd/system/watchman.service
-sudo systemctl daemon-reload
-sudo systemctl enable watchman.service --now
+rm -rf build main.spec
+mv -v dist watchman
+cp -p watchman.service watchman
+cp -p install.sh watchman
