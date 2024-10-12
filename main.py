@@ -37,7 +37,7 @@ def detect_dos_attack(packet):
         packet_count[src_ip] += 1
 
         current_time = time.time()
-        if current_time - last_check_time > 1:  # Check every 1 second
+        if (src_ip not in attack_ips) and (current_time - last_check_time > 1):  # Check every 1 second
             for ip, count in list(packet_count.items()):
                 if count > DOS_THRESHOLD:
                     block_ip(ip, reason=str(f":DoS"))
