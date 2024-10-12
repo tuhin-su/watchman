@@ -1,0 +1,13 @@
+[Unit]
+Description=watchman
+After=iptables.service
+
+[Service]
+Type=simple
+ExecStart=/opt/watchman/main
+WorkingDirectory=/opt/watchman
+User=root
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
