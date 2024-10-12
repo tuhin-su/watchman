@@ -11,11 +11,11 @@ def check_rule_exists(ip_address):
         return False
 
 def block_ip(ip_address, reason):
+    log(f"IP {ip_address} address added to block list for {reason}")
     if not check_rule_exists(ip_address):
         try:
             command = f"sudo iptables -A INPUT -s {ip_address} -j REJECT"
             os.system(command)
-            log(f"IP {ip_address} address added to block list for {reason}")
         except Exception as e:
             log(f"Failed to block IP address {ip_address}: {e}")
 
