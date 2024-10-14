@@ -10,3 +10,4 @@ rm -rf build main.spec
 mv -v dist watchman
 cp -p watchman.service watchman
 cp -p install.sh watchman
+cp -p watchman.conf watchman
