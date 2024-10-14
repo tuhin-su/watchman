@@ -1,5 +1,6 @@
 altgraph==0.17.4
 packaging==24.1
+plyer==2.1.0
 pyinstaller==6.10.0
 pyinstaller-hooks-contrib==2024.8
 scapy==2.6.0
